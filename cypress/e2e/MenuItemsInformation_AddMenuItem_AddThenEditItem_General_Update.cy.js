@@ -40,6 +40,8 @@ describe('login spec', () => {
       cy.get('#tax_1').invoke('prop', 'checked', false);
       cy.get('#tax_7').invoke('prop', 'checked', true);
       cy.get('#dis_1').invoke('prop', 'checked', true);
+      cy.get('#WebDescription').clear();
+      cy.get('#WebDescription').type('Web Des Test6');
       cy.get('#genTabSubmit', { timeout: 30000 }).click();
       Cypress.on('uncaught:exception', (err, runnable) => {
         // Handle the error as needed

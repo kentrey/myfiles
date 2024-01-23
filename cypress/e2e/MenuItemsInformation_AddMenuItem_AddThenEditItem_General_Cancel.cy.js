@@ -1,4 +1,4 @@
-describe('login spec', () => {
+describe('Verify if changes made are not saved when clicking Cancel button', () => {
     it('passes', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
