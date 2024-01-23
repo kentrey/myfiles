@@ -21,9 +21,8 @@ describe('login spec', () => {
     
 
       
-      cy.get('h2').contains('Specific Dates', {timeout:3000}).should('be.visible');
-
-      //wa pa ma run
+      cy.get('label[for="WebDescription"]').should('be.visible');
+     
 
 
     })
