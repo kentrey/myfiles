@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('Adding email under eCommerce setting spec', () => {
+    it('should reflect the new email added', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

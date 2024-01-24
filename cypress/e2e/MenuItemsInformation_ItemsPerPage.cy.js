@@ -1,5 +1,5 @@
-describe('Verify total number of items shown should match with the Items per page value', () => {
-    it('passes', () => {
+describe('Setting a maximum total number for items to be shown per page', () => {
+    it('should display only exact or less than the max number being set in the Items per page', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

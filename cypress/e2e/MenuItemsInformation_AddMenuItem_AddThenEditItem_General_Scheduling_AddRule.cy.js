@@ -1,5 +1,5 @@
-describe('Verify rule is successfully added', () => {
-    it('passes', () => {
+describe('Adding a new scheduling rule', () => {
+    it('should successfully add the new scheduling rule', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

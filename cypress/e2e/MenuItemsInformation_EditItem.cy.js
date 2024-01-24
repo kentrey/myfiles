@@ -1,5 +1,5 @@
-describe('Verify changes made are saved for existing items', () => {
-    it('passes', () => {
+describe('Editing an existing Menu item', () => {
+    it('should reflect the changes made for that specific Menu item in the Menu Item Information Table', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

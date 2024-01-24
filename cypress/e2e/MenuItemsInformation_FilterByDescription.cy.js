@@ -1,5 +1,5 @@
-describe('Verify filtered lists match with what is being filtered', () => {
-    it('passes', () => {
+describe('Setting Filter conditions under Description column', () => {
+    it('should only display the Menu Items that met the Filter conditions being set', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

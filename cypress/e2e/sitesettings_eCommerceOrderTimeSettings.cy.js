@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('eCommerce Order Time Settings spec', () => {
+    it('should open the eCommerce Order Time Settings table', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

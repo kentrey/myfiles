@@ -1,5 +1,5 @@
-describe('Verify rule is not added', () => {
-    it('passes', () => {
+describe('Adding a new rule but then decide to Cancel it', () => {
+    it('should not add the rule in the Scheduling table', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

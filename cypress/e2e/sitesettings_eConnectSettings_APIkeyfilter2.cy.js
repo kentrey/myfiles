@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('Setting Contains filter condition under API Key column', () => {
+    it('should display only list items where API Key contains the specified text', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

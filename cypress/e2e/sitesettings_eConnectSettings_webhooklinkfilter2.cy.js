@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('Setting Contains filter condition under Web Hook Link column', () => {
+    it('should display only list items where Web Hook Link contains the specified text', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('Turning ON the Future Date Process spec', () => {
+    it('should turn ON the Future Date Process', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('Setting Is Not Equal To filter condition under Maximum Order column', () => {
+    it('should display only list items where Maximum Order Is Not Equal to the specified number in the filter condition', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

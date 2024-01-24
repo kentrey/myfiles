@@ -1,5 +1,5 @@
-describe('Verify item is successfully deleted', () => {
-    it('passes', () => {
+describe('Deleting a Menu Item', () => {
+    it('should successfully delete the menu item in the Menu Items Information table', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 
@@ -16,6 +16,8 @@ describe('Verify item is successfully deleted', () => {
       cy.get(`div.btns-${49637} span.delete-row[data-id="${49637}"]`).click({multiple: true});
       cy.wait(2000);
       cy.get('h1').contains('Menu Items Information').should('be.visible');
+
+      //not working
 
       
      

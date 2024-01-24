@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('eConnect Settings spec', () => {
+    it('should open eConnect Settings table', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

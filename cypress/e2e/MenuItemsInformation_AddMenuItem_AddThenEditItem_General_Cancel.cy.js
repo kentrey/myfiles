@@ -1,5 +1,5 @@
-describe('Verify if changes made are not saved when clicking Cancel button', () => {
-    it('passes', () => {
+describe('Editting the new added item but then clicked Cancel button', () => {
+    it('should not saved the changes made for the new menu item added', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 

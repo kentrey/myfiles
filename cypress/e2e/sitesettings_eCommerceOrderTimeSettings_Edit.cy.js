@@ -1,5 +1,5 @@
-describe('login spec', () => {
-    it('passes', () => {
+describe('Updating the Pickup order', () => {
+    it('should successfully update the pickup order for a specific list', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 
@@ -21,7 +21,9 @@ describe('login spec', () => {
             cy.get('button.btn.meridiem-btn').eq(0).click({force: true});
     }
 })
-    cy.get('button.btn.btn-primary.mx-1.submit-btn:contains("OK")').click();
+    cy.get('.dashboardbtn.updatepickup').click();
+    cy.wait(2000);
+    cy.get('.popupcontent').should('not.be.visible');
 
       
       

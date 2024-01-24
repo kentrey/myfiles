@@ -1,5 +1,5 @@
-describe('Verify lists shown are as per searched text', () => {
-    it('passes', () => {
+describe('Searching a keyword in Menu Items Information', () => {
+    it('should display only those Menu Items that matches the searched text', () => {
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');
       cy.get('#username').type('jgesim@servingintel.com'); 
       cy.get('#Password').type('Welcome1@'); 
