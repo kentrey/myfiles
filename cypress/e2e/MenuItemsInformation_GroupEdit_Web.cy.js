@@ -43,7 +43,8 @@ describe('Group Edit Web tab Update spec', () => {
     });
 
       
-      cy.get('#saveWebTab').click(); //will update tomorrow 
+      //cy.get('#saveWebTab.dashboardbtn',{timeout: 3000}).click(); //will update tomorrow 
+      cy.get('div.btnstab-wrap button#saveWebTab.dashboardbtn').click();
       cy.wait(5000);
       cy.get('.tabs').should('be.visible');
       
