@@ -11,9 +11,9 @@ describe('Deleting a Menu Item', () => {
       cy.wait(2000);
       cy.get('button.dashboardbtn.searchitem').type('{enter}');
       cy.wait(3000);
-      cy.get(`span.delete-row[data-id="${49637}"]`).click();  //data-id is dynamic thus need to be manually changed from time to time
+      cy.get('div.row-column.btns-49668 span.delete-row[data-id="49668"]:first').click();
       cy.wait(2000);
-      cy.get(`div.btns-${49637} span.delete-row[data-id="${49637}"]`).click({multiple: true});
+      cy.get('div.confirmbtns button.yesconfirm').click();
       cy.wait(2000);
       cy.get('h1').contains('Menu Items Information').should('be.visible');
 
