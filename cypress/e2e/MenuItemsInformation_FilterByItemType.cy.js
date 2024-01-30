@@ -10,6 +10,15 @@ describe('Setting Filter conditions by item type', () => {
       cy.get('#itemtype-filter').select('Modifier');
       cy.wait(3000);
       cy.get('#itemtype-filter').should('have.value', 'IsModifier');
+      cy.get('#itemtype-filter').select('Menu Item');
+      cy.wait(3000);
+      cy.get('#itemtype-filter').should('have.value', 'MenuItem');
+      cy.get('#itemtype-filter').select('Group Modifier');
+      cy.wait(3000);
+      cy.get('#itemtype-filter').should('have.value', 'IsModifierGroup');
+      cy.get('#itemtype-filter').select('All');
+      cy.wait(3000);
+      cy.get('#itemtype-filter').should('have.value', 'All');
 
 
      

@@ -1,4 +1,4 @@
-describe('Group Edit Modifiers tab Advanced Option spec', () => {
+describe('Group Edit Advanced Option tab spec', () => {
     it('should reflect the updated fields under Advanced Options tab for each Menu items', () => {
         //still not working changes will not be saved perfectly due to missing item bug. Will finish scripting once bug is fixed.
       cy.visit('https://qa.enterprise.servingintel.com/login?ReturnUrl=%2F');

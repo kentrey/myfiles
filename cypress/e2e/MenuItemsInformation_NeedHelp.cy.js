@@ -14,17 +14,7 @@ describe('Menu Items Information Show Columns spec', () => {
       cy.wait(5000);
       cy.url().should ('include', '/meal/item/info');
         
-    //   cy.window().then((win) => {
-    //     cy.stub(win, 'open').as('windowOpen');
-    //   });
-      
-    //   // Adding a wait to allow the new tab to open
-    //   cy.wait(2000);
-      
-    //   // Asserting the URL of the newly opened tab
-    //   cy.get('@windowOpen').should('be.calledWith', 'https://university.servingintel.com/user-guides2/servingintel-solutions/si-cloud/si-cloud-control/2-uncategorised/338-how-to-manage-meal-plan-definition-in-site-settings#component');
-    //   //cy.url().should('contain', 'https://university.servingintel.com/user-guides2/servingintel-solutions/si-cloud/si-cloud-control/2-uncategorised/338-how-to-manage-meal-plan-definition-in-site-settings#component');
-     
+    
       
 
      
