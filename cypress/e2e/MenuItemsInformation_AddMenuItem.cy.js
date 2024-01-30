@@ -9,6 +9,8 @@ describe('Clicking Add Menu Item button', () => {
       cy.get('a[href="/meal/item/create"].dashboardbtn.add-menu-item').click();
       cy.url().should ('include', '/meal/item/create');
 
+      
+
 
 
     })
